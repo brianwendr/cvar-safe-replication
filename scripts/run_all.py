@@ -16,14 +16,10 @@ def run(config_path: str) -> None:
     run_sensitivity(config_path)
     run_trace_replay("configs/trace_replay.yaml")
     subprocess.run(
-        [sys.executable, str(ROOT / "scripts" / "make_manuscript_figures.py")],
-        check=True,
-    )
-    subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "check_reported_reference.py")],
         check=True,
     )
-    print("All manuscript analyses completed.")
+    print("All manuscript analyses and table-alignment checks completed.")
 
 
 if __name__ == "__main__":
