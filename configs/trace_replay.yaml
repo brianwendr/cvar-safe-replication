@@ -1,0 +1,47 @@
+experiment:
+  name: trace_replay
+  seeds: 10
+  seed_start: 501
+  policies:
+  - cvar_safe
+  - hpa_like
+  - keda_style
+simulation:
+  decision_interval_seconds: 300.0
+  window_intervals: 8
+  warmup_intervals: 0
+  activation_delay_intervals: 1
+  service_mean_ms: 55.0
+  service_sigma: 0.6
+  per_replica_capacity_rps: 100.0
+  sample_requests_per_interval: 240
+  min_replicas: 2
+  max_replicas: 20
+  initial_replicas: 2
+  slo_ms: 500.0
+  cooldown_intervals: 1
+  queue_threshold: 90.0
+  cvar_alpha: 0.95
+  cvar_budget_factor: 0.50
+  ema_beta: 0.3
+  pressure_threshold: 0.1
+  p99_safety_factor: 1.1
+  bottleneck_mode: app
+  cpu_utilization_factor: 0.50
+  cvar_safe_down_utilization: 0.20
+  baseline_low_streak_intervals: 2
+  pid_target_factor: 0.75
+  pid_kp: 2.4
+  pid_ki: 0.18
+  pid_kd: 0.45
+  pid_integral_clip: 5.0
+  pid_up_threshold: 1.0
+  pid_down_threshold: -1.0
+trace:
+  path: data/trace/alibaba_2018_machine_cpu_profile_300bins.csv
+  utilization_column: cpu_util_percent
+  arrival_rate_min: 90.0
+  arrival_rate_max: 1500.0
+  preserve_temporal_order: true
+output:
+  directory: results/generated

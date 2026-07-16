@@ -1,0 +1,8 @@
+configuration,cvar95_ms_mean,cvar95_ms_ci95_halfwidth,replica_seconds_mean,replica_seconds_ci95_halfwidth,scaling_actions_mean,scaling_actions_ci95_halfwidth
+Full CVaR-Safe,252.15,41.85,3878.2,108.9,50.33,8.71
+No CVaR trigger (pressure + p99),262.49,44.25,3755.1,78.2,39.27,5.28
+No queueing signal (CVaR + p99),427.15,83.24,3889.0,126.7,60.0,8.41
+Cooldown kappa=2,232.81,27.68,3930.9,121.5,62.4,12.41
+Cooldown kappa=4,280.94,52.22,3862.6,92.8,44.27,6.42
+Window W=5,264.41,44.25,3696.6,83.8,47.6,7.44
+Window W=10,252.82,40.54,4011.7,122.6,49.53,8.62

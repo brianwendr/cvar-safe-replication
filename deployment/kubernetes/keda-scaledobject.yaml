@@ -1,0 +1,18 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: latency-demo-keda
+spec:
+  scaleTargetRef:
+    name: latency-demo
+  minReplicaCount: 2
+  maxReplicaCount: 20
+  pollingInterval: 5
+  cooldownPeriod: 60
+  triggers:
+    - type: prometheus
+      metadata:
+        serverAddress: http://prometheus-operated.monitoring.svc:9090
+        metricName: demo_backlog_per_replica
+        query: sum(demo_backlog) / clamp_min(sum(kube_deployment_status_replicas{deployment="latency-demo"}), 1)
+        threshold: "36"

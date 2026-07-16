@@ -1,0 +1,7 @@
+method,slo_violations_pct_mean,slo_violations_pct_ci95_halfwidth,cvar95_ms_mean,cvar95_ms_ci95_halfwidth,p99_ms_mean,p99_ms_ci95_halfwidth,mean_latency_ms_mean,mean_latency_ms_ci95_halfwidth
+CVaR-Safe,0.35,0.27,252.15,41.85,332.78,72.97,68.94,2.68
+HPA-like controller,1.96,0.61,489.71,76.96,647.78,97.36,88.23,5.57
+KEDA-style queue controller,2.87,0.54,595.82,63.16,763.16,88.44,98.46,4.49
+Rule-based ladder,2.52,0.65,561.11,77.05,712.54,106.63,95.49,4.93
+PID controller,6.14,0.73,943.62,83.19,1143.68,96.91,124.79,7.69
+Predictive threshold,2.32,0.62,516.62,70.76,675.32,89.65,90.67,4.86

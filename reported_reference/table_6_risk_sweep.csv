@@ -1,0 +1,6 @@
+method,risk_budget_factor,slo_violations_pct,cvar95_ms,replica_seconds,scaling_actions
+CVaR-Safe,0.5,0.35,252.15,3878.2,50.33
+CVaR-Safe,0.55,0.361,255.43,3858.3,48.33
+CVaR-Safe,0.6,0.411,260.93,3846.9,47.0
+CVaR-Safe,0.7,0.411,261.84,3835.3,45.2
+CVaR-Safe,0.8,0.411,261.84,3814.4,42.53

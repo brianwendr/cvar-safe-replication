@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+results/local_pilot_*.csv
+.DS_Store

@@ -1,0 +1,10 @@
+mode,method,slo_violations_pct,cvar95_ms,replica_seconds
+app,CVaR-Safe,0.35,252.15,3878.2
+app,HPA-like controller,1.96,489.71,2585.3
+app,KEDA-style queue controller,2.87,595.82,2453.5
+mixed,CVaR-Safe,0.56,299.82,3954.8
+mixed,HPA-like controller,2.62,557.63,2585.3
+mixed,KEDA-style queue controller,3.61,669.11,2453.5
+db,CVaR-Safe,0.02,282.74,21600.0
+db,HPA-like controller,3.43,642.34,2585.3
+db,KEDA-style queue controller,4.54,753.38,2453.5

@@ -1,0 +1,4 @@
+method,slo_violations_pct_mean,slo_violations_pct_ci95_halfwidth,cvar95_ms_mean,cvar95_ms_ci95_halfwidth,p99_ms_mean,p99_ms_ci95_halfwidth,replica_seconds_mean,replica_seconds_ci95_halfwidth,scaling_actions_mean,scaling_actions_ci95_halfwidth
+CVaR-Safe,0.005,0.002,188.15,0.63,215.56,0.85,1166610,8489,46.6,2.24
+HPA-like controller,0.081,0.009,285.24,2.65,343.65,4.25,724830,1058,78.0,1.17
+KEDA-style queue controller,2.328,0.025,529.45,2.05,655.33,1.89,603000,516,193.0,1.51

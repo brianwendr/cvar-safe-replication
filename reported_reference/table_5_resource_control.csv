@@ -1,0 +1,7 @@
+method,replica_seconds_mean,replica_seconds_ci95_halfwidth,scaling_actions_mean,scaling_actions_ci95_halfwidth
+CVaR-Safe,3878.2,108.87,50.33,8.71
+HPA-like controller,2585.27,46.05,44.6,5.27
+KEDA-style queue controller,2453.53,34.76,48.33,4.61
+Rule-based ladder,2700.4,68.91,63.13,6.28
+PID controller,3123.13,105.32,75.27,7.54
+Predictive threshold,2840.93,87.14,70.87,8.14

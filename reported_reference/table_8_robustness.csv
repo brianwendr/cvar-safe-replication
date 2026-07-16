@@ -1,0 +1,7 @@
+scenario,method,slo_violations_pct,cvar95_ms,replica_seconds
+Fault injection,CVaR-Safe,0.35,245.83,3971.1
+Fault injection,HPA-like controller,1.96,491.29,2600.0
+Fault injection,KEDA-style queue controller,2.88,599.79,2461.9
+Tight SLO 300 ms,CVaR-Safe,1.09,251.71,3893.1
+Tight SLO 300 ms,HPA-like controller,3.91,489.71,2585.3
+Tight SLO 300 ms,KEDA-style queue controller,5.15,595.82,2453.5
